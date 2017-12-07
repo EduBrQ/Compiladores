@@ -204,33 +204,17 @@ function printSet(name, set) {
     console.log('');
 }
 
-var gramatica = {
-    1: 'S -> F',
-    2: 'S -> (S + F)',
-    3: 'F -> a',
-};
-
-var SIMBOLO_INICIAL = 'S';
-
-printGramatica(gramatica);
-
-montarConjuntoFirsts(gramatica);
-printSet('Conjuntos de Firsts', conjuntoFirst);
-
-montarConjutoFollow(gramatica);
-printSet('Conjuntos de Follows', conjuntoFollow);
 
 var gramatica = {
-    1: 'E -> TX',
-    2: 'X -> +TX',
-    3: 'X -> ε',
-    4: 'T -> FY',
-    5: 'Y -> *FY',
-    6: 'Y -> ε',
-    7: 'F -> a',
-    8: 'F -> (E)'
+    1: 'S -> A)',
+    2: 'B -> ;XB',
+    3: 'B -> ε',
+    4: 'C -> Y',
+    5: 'A -> CB',
+    6: 'A -> B',
+    7: 'X -> e',
+    8: 'Y -> a'
 };
-
 var SIMBOLO_INICIAL = 'E';
 
 printGramatica(gramatica);
