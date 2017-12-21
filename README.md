@@ -1,2 +1,2 @@
 # Compiladores
-Analisador Lexico e first e follow
+first e follow
